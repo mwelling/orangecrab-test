@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name orangecrab-test)(type Legacy)(uri /home/michael/projects/kicad/pcbs/orangecrab-test/orangecrab-test/orangecrab-test.lib)(options "")(descr ""))
+  (lib (name orangecrab-test)(type Legacy)(uri ${KIPRJMOD}/orangecrab-test.lib)(options "")(descr ""))
 )
