@@ -328,6 +328,21 @@ X AGND 9 -300 -1500 150 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # Memory_EEPROM_93CxxB
 #
 DEF Memory_EEPROM_93CxxB U 0 20 Y Y 1 F N
@@ -438,6 +453,7 @@ F0 "#PWR" 0 -150 50 H I C CNN
 F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
@@ -446,19 +462,18 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_+3V3
+# power_+3.3VA
 #
-DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+DEF power_+3.3VA #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3V3" 0 140 50 H V C CNN
+F1 "power_+3.3VA" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
+X +3.3VA 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
