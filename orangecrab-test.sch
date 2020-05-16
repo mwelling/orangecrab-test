@@ -1,16 +1,15 @@
 EESchema Schematic File Version 4
-LIBS:orangecrab-test-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "OrangeCrab Test Fixture"
+Date "2020-05-16"
+Rev "r0.0"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "(c) 2020 Michael Welling"
+Comment2 "(c) 2020 Greg Davill"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -2530,4 +2529,15 @@ F 3 "" H 4000 7200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 7150 4000 7200
+$Comp
+L power:+3.3VA #PWR0158
+U 1 1 5EC2B3EF
+P 12800 6600
+F 0 "#PWR0158" H 12800 6450 50  0001 C CNN
+F 1 "+3.3VA" H 12815 6773 50  0000 C CNN
+F 2 "" H 12800 6600 50  0001 C CNN
+F 3 "" H 12800 6600 50  0001 C CNN
+	1    12800 6600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
